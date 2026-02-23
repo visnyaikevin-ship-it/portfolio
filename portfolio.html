@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Visnyai Kevin | Portfolio</title>
+
+<link href="https://api.fontshare.com/v2/css?f[]=panchang@400,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e0e0e;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PORTFOLIO CÍM */
+
+.hero h1 {
+  font-family: 'Panchang', sans-serif;
+  font-size: clamp(3rem, 8vw, 10rem);
+  letter-spacing: 4px;
+  line-height: 1.1;
+
+  text-align: center;
+  max-width: 90%;
+
+  word-break: break-word;
+
+  transition: all 0.4s ease;
+}
+
+/* NÉV */
+
+.name-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: white;
+}
+
+.name-wrapper p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* CONTACT */
+
+.contact {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.contact-icon {
+  background: white;
+  color: black;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.contact-panel {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-right: 15px;
+
+  background: black;
+  color: white;
+
+  padding: 18px 24px;
+  border: 2px solid white;
+  border-radius: 14px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 0.3s ease;
+
+  pointer-events: none;
+}
+
+.contact:hover .contact-panel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .hero h1 {
+    font-size: 18vw;
+    letter-spacing: 1px;
+  }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- CONTACT -->
+<div class="contact">
+
+  <div class="contact-icon">
+    ✉
+  </div>
+
+  <div class="contact-panel">
+    visnyai.kevin.graphic@gmail.com
+  </div>
+
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+  <h1>PORTFOLIO</h1>
+
+  <div class="name-wrapper">
+    <div class="line"></div>
+    <p>Visnyai Kevin</p>
+  </div>
+
+</section>
+
+</body>
+</html>
